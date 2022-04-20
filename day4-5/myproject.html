@@ -1,0 +1,144 @@
+<html>
+  <body>
+    <head>
+      <title>My Project</title>
+      <link rel="stylesheet" href="main.css" />
+      <link rel="stylesheet" href="/css/all.min.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;700&family=Plus+Jakarta+Sans:wght@700&display=swap"
+        rel="stylesheet"
+      />
+    </head>
+
+    <nav>
+      <div class="left-side">
+        <a href="index.html">
+          <img src="/img/logo.png" alt="" />
+        </a>
+        <ol>
+          <li>
+            <a href="/index.html">Home</a>
+          </li>
+          <li>
+            <a href="/myproject.html">My project</a>
+          </li>
+        </ol>
+      </div>
+
+      <div class="right-side">
+        <a href="/index.html">Contact Me</a>
+      </div>
+    </nav>
+
+    <div class="form-container">
+      <h2>ADD NEW PROJECT</h2>
+      <form action="" class="font-weight-400">
+        <div class="name-form column">
+          <label for="name" class="margin-top">Project Name</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div class="date-form">
+          <div class="start-date date">
+            <label for="start-date" class="margin-top">Start Date</label>
+            <input type="date" name="start-date" id="start-date" />
+          </div>
+          <div class="end-date date">
+            <label for="end-date" class="margin-top">End Date</label>
+            <input type="date" name="end-date" id="end-date" />
+          </div>
+        </div>
+        <div class="description-form column">
+          <label for="descripion" class="margin-top">Description</label>
+          <textarea
+            name="description"
+            id="description"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <p class="font-weight-400">Technologies</p>
+        <div class="technologies-form column">
+          <!-- <label for="technologies">Technologies</label> -->
+          <div class="checkbox-first-form row-form">
+            <label class="container">
+              <input type="checkbox" value="0" class="checkbox" />
+              <span class="checkmark"></span>
+              Node Js
+            </label>
+            <label class="container">
+              <input type="checkbox" value="2" class="checkbox" />
+              <span class="checkmark"></span>
+              React Js
+            </label>
+          </div>
+          <div class="checkbox-second-form row-form">
+            <label class="container">
+              <span class="checkmark" style="background-color: aqua"></span>
+              <input type="checkbox" value="1" class="checkbox" />
+              Vue Js</label
+            >
+            <label class="container">
+              <input type="checkbox" value="3" class="checkbox" />
+              <span class="checkmark"></span>
+              Python
+            </label>
+          </div>
+        </div>
+        <div class="upload-image-form">
+          <div class="file-field">
+            <input type="file" id="upload" class="upload-image" name="upload" />
+            <!-- <label for="upload" class="margin-top image-upload">Upload Image</label> -->
+            <i class="fa-solid fa-arrow-up-from-bracket upload-icon"></i>
+          </div>
+        </div>
+        <button
+          type="submit"
+          onclick="data(event)"
+          class="button-submit"
+          id="submit"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+    <div id="project-field" class="project-field">
+      <h2 class="project-title">MY PROJECT</h2>
+      <div class="ul-card" id="ul-card">
+        <div class="card">
+          <div class="card-image">
+            <img src="/img/blog-img.png" alt="" />
+          </div>
+          <div class="card-info">
+            <div class="title-duration">
+              <h3 class="title" id="tittle">Lorem ipsum dolor sit amet</h3>
+              <p class="duration">Durasi: 5 Hari</p>
+            </div>
+            <div class="description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis
+              saepe reiciendis ab. Officiis maxime maiores ducimus ipsam,
+              placeat illo dolorum cum eveniet? Esse saepe minus cumque natus
+              ipsam eligendi numquam!
+            </div>
+            <div class="card-icon">
+              <ul>
+                <i class="fa-brands fa-2x fa-vuejs"></i>
+                <i class="fa-brands fa-2x fa-node-js"></i>
+                <i class="fa-brands fa-2x fa-python"></i>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="card-btn edit-btn" href>Edit</button>
+              <button type="button" class="card-btn delete-btn">Delete</button>
+            </div>
+            <div class="time-upload">
+              <p>Diupload pada 5 menit lalu</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="form.js"></script>
+</html>
